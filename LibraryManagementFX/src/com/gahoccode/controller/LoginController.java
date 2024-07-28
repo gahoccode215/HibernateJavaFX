@@ -17,7 +17,7 @@ import javafx.stage.Stage;
 
 public class LoginController {
 	@FXML
-	private TextField txtUserName;
+	private TextField txtUsername;
 
 	@FXML
 	private TextField txtPassword;
@@ -30,7 +30,7 @@ public class LoginController {
 
 	@FXML
 	public void Login() throws IOException {
-		Account account = iAccountService.findByUserName(txtUserName.getText());
+		Account account = iAccountService.findByUserName(txtUsername.getText());
 		if (account != null && account.getPassword().equals(txtPassword.getText())) {
 			FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../view/Dashboard.fxml"));
 			Parent root = fxmlLoader.load();

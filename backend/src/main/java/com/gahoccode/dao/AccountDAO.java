@@ -2,6 +2,7 @@ package com.gahoccode.dao;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
 import com.gahoccode.pojo.Account;
@@ -28,5 +29,16 @@ public class AccountDAO {
 		}
 	}
 
-	
+	public void save(Account account) {
+		Session session = sessionFactory.openSession();
+		Transaction t = session.beginTransaction();
+		try {
+			session.save(account);
+			t.commit();
+		} catch (Exception e) {
+			t.rollback();
+		} finally {
+			session.close();
+		}
+	}
 }

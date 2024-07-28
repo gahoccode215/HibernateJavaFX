@@ -13,6 +13,7 @@
 	
 		<mapping class="com.gahoccode.pojo.Book" />
 		<mapping class="com.gahoccode.pojo.Student"/>
+		<mapping class="com.gahoccode.pojo.Account"/>
 	</session-factory>
 
 </hibernate-configuration>  

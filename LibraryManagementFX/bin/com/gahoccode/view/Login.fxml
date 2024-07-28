@@ -8,8 +8,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="com.gahoccode.controller.LoginController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gahoccode.controller.LoginController">
    <children>
       <Pane prefHeight="130.0" prefWidth="600.0" style="-fx-background-color: #2D75E8;">
          <children>
@@ -30,17 +29,17 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="txtusername" layoutX="188.0" layoutY="174.0" prefHeight="40.0" prefWidth="223.0">
+      <TextField fx:id="txtUsername" layoutX="188.0" layoutY="174.0" prefHeight="40.0" prefWidth="223.0">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <PasswordField fx:id="txtpassword" layoutX="188.0" layoutY="246.0">
+      <PasswordField fx:id="txtPassword" layoutX="188.0" layoutY="246.0">
          <font>
             <Font size="18.0" />
          </font>
       </PasswordField>
-      <Button layoutX="265.0" layoutY="315.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="70.0" text="LOGIN">
+      <Button layoutX="265.0" layoutY="315.0" mnemonicParsing="false" onAction="#Login" prefHeight="40.0" prefWidth="70.0" text="LOGIN">
          <font>
             <Font size="13.0" />
          </font>

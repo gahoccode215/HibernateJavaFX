@@ -40,6 +40,24 @@ public class Student {
 		this.books = new HashSet<Book>();
 	}
 	
+	
+
+
+	public Student(int id, String firstName, String lastName, int marks) {
+		super();
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.marks = marks;
+	}
+
+
+
+
+	public Student() {
+		super();
+	}
+
 
 	public int getId() {
 		return id;
